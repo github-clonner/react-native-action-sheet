@@ -1,14 +1,30 @@
 {
   "name": "example",
-  "version": "0.0.0",
-  "description": "Hello Expo!",
-  "author": "support@expo.io",
+  "version": "3.0.0",
+  "description": "Hello react native action sheet!!",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "ios": "expo start --ios",
+    "android": "expo start --android",
+    "web": "expo start --web",
+    "type-check": "tsc --noEmit"
+  },
   "dependencies": {
-    "@expo/react-native-action-sheet": "../",
-    "expo": "^25.0.0",
-    "react": "16.2.0",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz"
+    "@expo/react-native-action-sheet": "../src",
+    "@expo/vector-icons": "^10.0.0",
+    "expo": "^35.0.0",
+    "hoist-non-react-statics": "^3.3.0",
+    "react": "16.8.3",
+    "react-dom": "16.8.3",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-35.0.0.tar.gz",
+    "react-native-web": "^0.11.5"
+  },
+  "devDependencies": {
+    "@types/react": "^16.8.23",
+    "@types/react-native": "^0.57.65",
+    "babel-preset-expo": "^7.0.0",
+    "typescript": "^3.5.3"
   }
 }
